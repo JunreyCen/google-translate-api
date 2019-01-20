@@ -74,7 +74,7 @@ function updateTKK() {
         resolve();
       }
       else {
-        let res = await got('https://translate.google.com');
+        let res = await got('https://translate.google.cn');
 
         const code = res.body.match(/TKK=(.*?)\(\)\)'\);/g);
 

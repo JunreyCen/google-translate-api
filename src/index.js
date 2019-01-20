@@ -40,7 +40,7 @@ async function translate(text, options) {
     let token = await tokenGenerator.generate(text);
 
     // URL & query string required by Google Translate.
-    let url = 'https://translate.google.com/translate_a/single';
+    let url = 'https://translate.google.cn/translate_a/single';
     let data = {
       client: 'gtx',
       sl: options.from,
