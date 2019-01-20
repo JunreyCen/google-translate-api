@@ -60,6 +60,8 @@ async function translate(text, options) {
     // Append query string to the request URL.
     url = `${url}?${querystring.stringify(data)}`;
 
+    console.log(`谷歌翻译request url: ${url}`);
+
     let requestOptions;
     // If request URL is greater than 2048 characters, use POST method.
     if (url.length > 2048) {
